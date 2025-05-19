@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+@theme {
+  --bg-img-home:url("/assets/home/background-home-desktop.jpg");
+  --bg-img-tab:url("/assets/home/background-home-desktop.jpg")
+}
+
+
+
+  .active{
+    text-decoration:underline;
+    text-underline-offset: 20px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #fff;
+    /* border:1px solid red; */
+  }
+
+  /* .active:hover{
+    text-decoration:underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: black; 
+  } */
