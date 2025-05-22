@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
     
-        <header className='absolute  py-3  min-w-screen'>
+        <header className='fixed py-3  min-w-screen'>
             <nav className='flex   justify-between px-6 items-center  py-2'>
                 <div>
                     <img src="\assets\shared\logo.svg" alt="" />
@@ -36,7 +36,7 @@ const Header = () => {
                     }
             </nav>
 
-            <div className={`${isOPen?"max-h-screen transition-all  absolute gap-y-16 right-0 w-3/4 scroll-smooth bg-amber-500 h-screen":" translate-x-3/3"} `}>
+            <div className={`${isOPen?"max-h-screen transition-all  absolute gap-y-16 right-0 w-3/4 scroll-smooth z-100 bg-white/10 backdrop-blur-2xl h-screen":"translate-x-3/3"} `}>
                 {
                       NavLinks.map(({id,name, pathname})=>(
                         <li className="list-none my-5 px-5" key={id}>
